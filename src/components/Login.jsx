@@ -12,24 +12,24 @@ import {
 } from "@mui/material";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 
-export function Login() {
+export function Login({ handleChange }) {
   const paperStyle = {
+    width: 300,
     padding: 20,
-    height: "70vh",
-    width: 280,
-    margin: "20px auto",
+    height: "73vh",
+    margin: "0 auto",
   };
   const avatarStyle = { backgroundColor: "#1BBD7E" };
   const btnStyle = { margin: "8px 0" };
 
   return (
     <Grid>
-      <Paper elevation={10} style={paperStyle}>
+      <Paper style={paperStyle}>
         <Grid align={"center"}>
           <Avatar style={avatarStyle}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography marginTop={1} component="h1" variant="h4">
+          <Typography marginTop={1} component="h1" variant="h5">
             Sign In
           </Typography>
         </Grid>
@@ -72,7 +72,12 @@ export function Login() {
         </Typography>
         <Typography>
           Do you have an account ?
-          <Link href="#" marginLeft={1} underline={"hover"}>
+          <Link
+            href="#"
+            marginLeft={1}
+            underline={"hover"}
+            onClick={() => handleChange("event", 1)}
+          >
             Sign up
           </Link>
         </Typography>

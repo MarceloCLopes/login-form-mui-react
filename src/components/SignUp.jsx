@@ -15,17 +15,18 @@ import {
 } from "@mui/material";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 
-export function SignIn() {
+export function SignUp() {
   const paperStyle = {
     width: 300,
     padding: 20,
-    margin: "30px 20px",
+    height: "73vh",
+    margin: "0 auto",
   };
   const avatarStyle = { backgroundColor: "#1BBD7E" };
 
   return (
     <Grid>
-      <Paper elevation={10} style={paperStyle}>
+      <Paper style={paperStyle}>
         <Stack spacing={1} alignItems={"center"}>
           <Avatar style={avatarStyle}>
             <AddCircleOutlineIcon />
