@@ -29,7 +29,7 @@ export function Login() {
           <Avatar style={avatarStyle}>
             <LockOutlinedIcon />
           </Avatar>
-          <Typography marginTop={1} component="h2">
+          <Typography marginTop={1} component="h1" variant="h4">
             Sign In
           </Typography>
         </Grid>
