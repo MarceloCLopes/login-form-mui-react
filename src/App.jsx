@@ -1,12 +1,10 @@
-import { Login } from "./components/Login";
-import { SignIn } from "./components/SignIn";
+import { SignInOutContainer } from "./containers";
 
 function App() {
   return (
-    <div>
-      <SignIn />
-      {/* <Login /> */}
-    </div>
+    <>
+      <SignInOutContainer />
+    </>
   );
 }
 
